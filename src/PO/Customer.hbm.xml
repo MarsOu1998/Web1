@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="PO.Customer" table="user">   <!--类和表对应-->
+    <id name="account" column="account" >       <!--主键-->
+        <generator class="assigned"/>           <!--主键生成策略，assigned表示由用户赋值-->
+    </id>
+        <property name="pwd" column="pwd"/>
+        <property name="name" column="name"/>
+        <property name="age" column="age"/>
+        <property name="sex" column="sex"/>
+    </class>
+</hibernate-mapping>
